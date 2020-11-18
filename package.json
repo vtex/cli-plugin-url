@@ -1,23 +1,26 @@
 {
-  "name": "@vtex/cli-plugin-template",
-  "description": "vtex plugin template",
+  "name": "@vtex/cli-plugin-url",
+  "description": "vtex plugin url",
   "version": "0.0.0",
-  "bugs": "https://github.com/vtex/cli-plugin-template/issues",
+  "bugs": "https://github.com/vtex/cli-plugin-url/issues",
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
+    "configstore": "^5.0.1",
+    "jsonwebtoken": "^8.5.1",
     "tslib": "^1"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1",
     "@oclif/plugin-help": "^3",
+    "@types/configstore": "^4.0.0",
     "@types/jest": "^26.0.3",
+    "@types/jsonwebtoken": "^8.5.0",
     "@types/node": "^14.0.14",
-    "eslint": "^6.8.0",
+    "eslint": "^7.13.0",
     "eslint-config-oclif": "^3.1",
     "eslint-config-vtex": "^12.3.0",
     "globby": "^10",
-    "husky": "^4.2.5",
     "jest": "^25.1.0",
     "lint-staged": "^10.2.11",
     "nodemon": "^2.0.2",
@@ -37,7 +40,7 @@
     "/oclif.manifest.json",
     "/yarn.lock"
   ],
-  "homepage": "https://github.com/vtex/cli-plugin-template",
+  "homepage": "https://github.com/vtex/cli-plugin-url",
   "keywords": [
     "oclif-plugin"
   ],
@@ -49,7 +52,7 @@
       "@oclif/plugin-help"
     ]
   },
-  "repository": "vtex/cli-plugin-template",
+  "repository": "vtex/cli-plugin-url",
   "scripts": {
     "build-clean": "rm -rf build",
     "build-incremental": "tsc --incremental",
@@ -66,19 +69,5 @@
     "test": "jest --passWithNoTests",
     "version": "oclif-dev readme && git add README.md",
     "watch": "yarn build-clean && yarn nodemon"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{ts,js,tsx,jsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.json": [
-      "prettier --write"
-    ]
   }
 }

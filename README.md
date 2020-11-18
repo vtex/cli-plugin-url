@@ -1,4 +1,4 @@
-# VTEX CLI Plugin Template
+# VTEX CLI Plugin URL
 
 Extend the `vtex` toolbelt!
 
@@ -18,18 +18,18 @@ For more information, read [Ocliff Docs](https://oclif.io/docs/introduction).
 ![npm](https://img.shields.io/npm/v/@vtex/cli-plugin-template)
 
 <!-- toc -->
-* [VTEX CLI Plugin Template](#vtex-cli-plugin-template)
+* [VTEX CLI Plugin URL](#vtex-cli-plugin-url)
 * [Usage](#usage)
 * [Commands](#commands)
 <!-- tocstop -->
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g @vtex/cli-plugin-template
+$ npm install -g @vtex/cli-plugin-url
 $ vtex COMMAND
 running command...
 $ vtex (-v|--version|version)
-@vtex/cli-plugin-template/0.0.0 linux-x64 node-v12.18.4
+@vtex/cli-plugin-url/0.0.0 linux-x64 node-v12.19.0
 $ vtex --help [COMMAND]
 USAGE
   $ vtex COMMAND
@@ -38,27 +38,24 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`vtex hello [FILE]`](#vtex-hello-file)
+* [`vtex url`](#vtex-url)
 
-## `vtex hello [FILE]`
+## `vtex url`
 
-describe the command here
+Prints base URL for current account, workspace and environment
 
 ```
 USAGE
-  $ vtex hello [FILE]
+  $ vtex url
 
 OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-  -v, --verbose    Show debug level logs
-  --trace          Ensure all requests to VTEX IO are traced
+  -h, --help     show CLI help
+  -v, --verbose  Show debug level logs
+  --trace        Ensure all requests to VTEX IO are traced
 
 EXAMPLE
-  $ oclif-example hello
-  hello world from ./src/hello.ts!
+  vtex url
 ```
 
-_See code: [build/commands/hello.ts](https://github.com/vtex/cli-plugin-template/blob/v0.0.0/build/commands/hello.ts)_
+_See code: [build/commands/url.ts](https://github.com/vtex/cli-plugin-url/blob/v0.0.0/build/commands/url.ts)_
 <!-- commandsstop -->
