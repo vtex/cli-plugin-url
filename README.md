@@ -42,7 +42,7 @@ USAGE
 
 ## `vtex url`
 
-Prints the base URL for the current account, workspace and environment
+Prints the base URL for the current [38;5;149maccount, [38;5;149mworkspace and [38;5;149menvironment
 
 ```
 USAGE
