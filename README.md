@@ -29,7 +29,7 @@ $ npm install -g @vtex/cli-plugin-url
 $ vtex COMMAND
 running command...
 $ vtex (-v|--version|version)
-@vtex/cli-plugin-url/0.1.2 linux-x64 node-v12.21.0
+@vtex/cli-plugin-url/0.1.2 linux-x64 node-v12.22.12
 $ vtex --help [COMMAND]
 USAGE
   $ vtex COMMAND
@@ -42,7 +42,7 @@ USAGE
 
 ## `vtex url`
 
-Prints the base URL for the current [38;5;149maccount, [38;5;149mworkspace and [38;5;149menvironment
+Prints the base URL for the current account, workspace and environment
 
 ```
 USAGE
