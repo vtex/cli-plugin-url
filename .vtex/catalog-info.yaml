@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cli-plugin-url
+  description: Prints the base URL for the current environment
+  tags:
+    - typescript
+    - oclif
+  annotations:
+    vtex.com/janus-acronym: ""
+    vtex.com/o11y-os-index: ""
+    grafana/dashboard-selector: ""
+    github.com/project-slug: vtex/cli-plugin-url
+    backstage.io/techdocs-ref: dir:../
+spec:
+  lifecycle: stable
+  owner: apps
+  type: cli-plugin
+  dependsOn: []
+  subcomponentOf: toolbelt
